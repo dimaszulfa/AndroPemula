@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etData1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Masukkan Data"/>
+
+    <EditText
+        android:id="@+id/etData2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Data Lainnya"
+        android:minHeight="48dp" />
+    <Button
+        android:id="@+id/btnKirim"
+        android:text="Kirim ke Activity Lain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnImplicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menuju Implicit"
+        />
+
+    <ImageView
+        android:id="@+id/ivView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+<Button
+    android:id="@+id/btnImagePicker"
+    android:layout_width="wrap_content"
+    android:text="Ambil Data"
+    android:layout_height="wrap_content"/>
+</LinearLayout>
