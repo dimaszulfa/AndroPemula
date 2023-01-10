@@ -32,7 +32,12 @@
         android:layout_height="wrap_content"
         android:text="Menuju Implicit"
         />
-
+    <Button
+        android:id="@+id/btntoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menuju Fragment"
+        />
     <ImageView
         android:id="@+id/ivView"
         android:layout_width="match_parent"

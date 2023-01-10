@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.arcquila.androidpemula.belajarFragment.ShowActivity
 import com.arcquila.androidpemula.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -51,6 +52,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             btnKirim.setOnClickListener(this@MainActivity)
             btnImplicit.setOnClickListener(this@MainActivity)
             btnImagePicker.setOnClickListener(this@MainActivity)
+            btntoFragment.setOnClickListener(this@MainActivity)
         }
     }
 
@@ -59,7 +61,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnKirim -> sendData()
 //            R.id.btnImplicit -> goToGallery()
             R.id.btnImagePicker -> getImage()
+            R.id.btntoFragment -> toShowActivity()
         }
+    }
+
+    private fun toShowActivity() {
+        val intent = Intent(this@MainActivity, ShowActivity::class.java)
+        startActivity(intent)
     }
 
     private fun goToPickUp() {
